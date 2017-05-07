@@ -31,9 +31,23 @@
 
 3.提交PR等待校对
 
+在本repo中，打开文章相应分类的文件夹，将你的markdown文章拖拽至其中并上传，文档名称请与文章标题译名保持一致。
 
+* [HTML](HTML/)
+* [CSS](CSS/)
+* [JavaScript](JS/)
+* [Frameworks](Frameworks/)
+* [Stories](Stories/)
+
+上传完成后并确认提交后，会有是否提交pull request的提示，根据提示确定操作即可。之后只需等待校对，校对完成之后，在你之前申领翻译的相应issue下会有校对完毕的提醒。
 
 4.发布文章到专栏
+
+* 使用[markdown转换html工具](https://codepen.io/discountry/full/XKGJWp/)将校对完毕的文章转换成HTML文档，
+* 复制粘贴至知乎专栏编辑器当中，
+* 设置好文章标题及封面图片，
+* 确认发布，
+* 在[专栏主页](https://zhuanlan.zhihu.com/icode)将你的文章投稿至专栏等待审核。
 
 
 
