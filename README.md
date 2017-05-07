@@ -49,5 +49,7 @@
 * 确认发布，
 * 在[专栏主页](https://zhuanlan.zhihu.com/icode)将你的文章投稿至专栏等待审核。
 
+![contribute](img/contribute.png)
+
 
 
