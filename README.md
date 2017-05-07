@@ -10,11 +10,28 @@
 
 1.认领翻译
 
-在待翻译文章列表中
+在待翻译文章列表中的issues下回复，表面你想要翻译该文章的意愿。
 
 2.翻译文章
 
-3.等待校对
+独立完成该文章的翻译。我们推荐使用Markdown语法书写译文文档，在译文的开头，加上例如下方示例的声明：
+
+> 原文链接：[What Every Frontend Developer Should Know About Webpage Rendering](http://frontendbabel.info/articles/webpage-rendering-101/)
+> 
+> 作者：(Alexander Skutin)[http://skutin.ru/]
+> 
+> 译者：余博伦
+>
+> 转载请注明出处。
+
+编辑器推荐：
+
+* [VS Code](https://code.visualstudio.com/) 安装 [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) 插件。
+* [Sublime Text](https://www.sublimetext.com/) 安装 [Markdown​Editing](https://packagecontrol.io/packages/MarkdownEditing) 插件。
+
+3.提交PR等待校对
+
+
 
 4.发布文章到专栏
 
