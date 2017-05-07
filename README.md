@@ -18,7 +18,7 @@
 
 > 原文链接：[What Every Frontend Developer Should Know About Webpage Rendering](http://frontendbabel.info/articles/webpage-rendering-101/)
 > 
-> 作者：(Alexander Skutin)[http://skutin.ru/]
+> 作者：[Alexander Skutin](http://skutin.ru/)
 > 
 > 译者：余博伦
 >
