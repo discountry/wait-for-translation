@@ -31,6 +31,10 @@
 * [VS Code](https://code.visualstudio.com/) 安装 [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) 插件。
 * [Sublime Text](https://www.sublimetext.com/) 安装 [Markdown​Editing](https://packagecontrol.io/packages/MarkdownEditing) 插件。
 
+图床推荐：
+
+* [sm.ms](https://sm.ms/)
+
 3.提交PR等待校对
 
 在本repo中，打开文章相应分类的文件夹，将你的markdown文章拖拽至其中并上传，文档名称请与文章标题译名保持一致。
