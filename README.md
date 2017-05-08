@@ -16,7 +16,7 @@
 
 2.翻译文章
 
-独立完成该文章的翻译。我们推荐使用Markdown语法书写译文文档，在译文的开头，加上例如下方示例的声明：
+独立完成该文章的翻译。我们推荐使用[Markdown语法](http://www.appinn.com/markdown/index.html)书写译文文档，在译文的开头，加上例如下方示例的声明：
 
 > 原文链接：[What Every Frontend Developer Should Know About Webpage Rendering](http://frontendbabel.info/articles/webpage-rendering-101/)
 > 
