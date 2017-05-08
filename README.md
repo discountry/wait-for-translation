@@ -59,6 +59,13 @@
 
 ![contribute](img/contribute.png)
 
+## 如何加入翻译组
+ 
+如果你的时间足够充裕，对Web开发技术已有相当的了解，英文水平还算不错，能够顺利阅读并准确理解英文技术文章，欢迎你加入我们的翻译组一同交流学习。
+ 
+ ![qrcode](img/IMG_0216.JPG)
+
+
 ## 参考
 
 * [掘金翻译计划](https://github.com/xitu/gold-miner)
