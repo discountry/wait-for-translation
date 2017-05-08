@@ -6,9 +6,7 @@
 
 ## 如何参与翻译计划
 
-**[推荐英文技术文章](https://github.com/discountry/wait-for-translate/issues/new?title=文章推荐 - &body=>**类别：**[]()
->**原文链接：**[]()
->**作者：**[]())**
+**[推荐英文技术文章](https://github.com/discountry/wait-for-translate/issues/new?title=文章推荐 - &body=>**类别：**[]()\n>**原文链接：**[]()\n>**作者：**[]())**
 
 1.认领翻译
 
