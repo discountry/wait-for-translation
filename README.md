@@ -59,5 +59,8 @@
 
 ![contribute](img/contribute.png)
 
+## 参考
+
+* [掘金翻译计划](https://github.com/xitu/gold-miner)
 
 
