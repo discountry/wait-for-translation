@@ -8,6 +8,8 @@
 
 **[推荐英文技术文章](https://github.com/discountry/wait-for-translate/issues/new?title=%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%20-%20&body=%3E**%E7%B1%BB%E5%88%AB%EF%BC%9A**%5B%5D(/discountry/wait-for-translate/tree/master/)%0A%3E**%E5%8E%9F%E6%96%87%E9%93%BE%E6%8E%A5%EF%BC%9A**%5B%5D()%0A%3E**%E4%BD%9C%E8%80%85%EF%BC%9A**%5B%5D())**
 
+> [待翻译文章](https://github.com/discountry/wait-for-translate/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%E7%AD%89%E5%BE%85%E8%AE%A4%E9%A2%86)
+
 1.认领翻译
 
 在待翻译文章列表中的issues下回复，表面你想要翻译该文章的意愿。
