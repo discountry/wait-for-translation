@@ -1,9 +1,12 @@
 # 用 原生Javascript 创建带动画的固顶导航菜单
 
 > 原文链接: [Create an Animated Sticky Navigation Menu with Vanilla JavaScript](https://www.sitepoint.com/animated-sticky-navigation-menu-javascript/)
-作者: [Albert Senghor](https://www.sitepoint.com/author/asenghor/)
-译者: [codearvin](https://codearvin.github.io)
-转载请注明出处
+>
+>作者: [Albert Senghor](https://www.sitepoint.com/author/asenghor/)
+>
+>译者: [codearvin](https://codearvin.github.io)
+>
+>转载请注明出处
 
 当我们在网页中加入一个导航菜单的时候，需要考虑很多因素。例如：位置、样式、响应式。又或者你可能想为它添加一些动画(当然这会更炫酷)。这时你可能有兴趣去使用jQuery这个插件，它会帮你做大部分的事情。但并不必这样！事实上你可以只用几行代码来创建出你自己的解决方案。
 
