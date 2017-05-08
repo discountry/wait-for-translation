@@ -6,7 +6,7 @@
 
 ## 如何参与翻译计划
 
-**[推荐英文技术文章](https://github.com/discountry/wait-for-translate/issues/new?title=%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%20-%20&body=%3E**%E7%B1%BB%E5%88%AB%EF%BC%9A**%5B%5D()%0A%3E**%E5%8E%9F%E6%96%87%E9%93%BE%E6%8E%A5%EF%BC%9A**%5B%5D()%0A%3E**%E4%BD%9C%E8%80%85%EF%BC%9A**%5B%5D())**
+**[推荐英文技术文章](https://github.com/discountry/wait-for-translate/issues/new?title=%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%20-%20&body=%3E**%E7%B1%BB%E5%88%AB%EF%BC%9A**%5B%5D(/discountry/wait-for-translate/tree/master/)%0A%3E**%E5%8E%9F%E6%96%87%E9%93%BE%E6%8E%A5%EF%BC%9A**%5B%5D()%0A%3E**%E4%BD%9C%E8%80%85%EF%BC%9A**%5B%5D())**
 
 1.认领翻译
 
