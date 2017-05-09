@@ -205,6 +205,8 @@ function animateIn() {
 
 [Create an Animated Sticky Navigation Menu with Vanilla JavaScript](http://codepen.io/SitePoint/pen/ZKJVdw/)
 
+![nav.png](https://ooo.0o0.ooo/2017/05/09/5911cd339cbe9.png)
+
 ## 总结
 
 这篇文章描述了如何仅仅用几行JavaScript代码(不需要jQuery)设计一个带动画的导航菜单。菜单会在页面向下滚动时上滑隐藏，页面向上滚动时下滑回视图并带有透明效果。这是通过监听垂直方向的滚动并在需要的时候把 CSS transformatinos 应用到DOM元素上来完成的。这样的定制化解决方案会给你更大的自由空间，让你可以根据自己的需求和规定灵活的进行设计。
