@@ -43,6 +43,7 @@
 ### 主容器
 
 我们需要移除任何固有的浏览器样式并且设置我们主容器的width为100%。
+
 ```css
 *{
   box-sizing:border-box;
@@ -86,6 +87,7 @@
 ### 内容部分
 
 这部分包含背景图片和文本。我们会在接下来的文章中为这部分页面添加视差效果。
+
 ```css
 .content {
   background: url(https://unsplash.it/1400/1400?image=699) center no-repeat;
@@ -96,7 +98,8 @@
 
 ## 让菜单动起来
 
-我们要做的第一件事是给滚动事件添加一个事件处理器，以便我们在用户滚动页面的时候展示或隐藏菜单。我们也会把所有代码用[IIFE](https://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/#immediately-invoked-function-expressions-iifes)封装起来以免与同一页面的其他代码发生冲突。
+我们要做的第一件事是给滚动事件添加一个事件处理器，以便我们在用户滚动页面的时候展示或隐藏菜单。我们也会把所有代码用即时执行函数[IIFE](https://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/#immediately-invoked-function-expressions-iifes)封装起来以免与同一页面的其他代码发生冲突。
+
 ```javascript
 (() => {
   'use strict';
@@ -112,6 +115,7 @@
 ### 设置一些初始变量
 
 我们用`refoffset`变量表示用户向下滚动页面的距离。这个值会在页面加载时初始化为`0`。我们用`bannerHeight`变量来储存菜单的高度。同样我们需要`.banner-wrapper`和`.banner`两个DOM元素的引用。
+
 ```javascript
 let refOffset = 0;
 let visible = true;
@@ -137,6 +141,7 @@ if (newOffset > bannerHeight) {
 ```
 
 向下滚动会使`newOffset`的值大于`refOffset`的值，这时导航菜单应该上滑隐藏。向上滚动会使`newOffset`的值小于`refOffset`的值，这时导航菜单应该以透明效果滑回视图。通过这样的分析，我们需要不断通过`newOffset`来更新`refOffset`的值，来保持对用户滚动的距离的追踪。
+
 ```javascript
 if (newOffset > bannerHeight) {
   // Menu out of view
@@ -155,6 +160,7 @@ if (newOffset > bannerHeight) {
 ## 菜单动画
 
 最后，让我们添加`animateIn`和`animateOut`两个方法来展示和隐藏菜单。我们也应该保证当菜单位于页面顶部的时候移除透明效果。
+
 ```javascript
 if (newOffset > bannerHeight) {
   if (newOffset > refOffset) {
@@ -170,6 +176,7 @@ if (newOffset > bannerHeight) {
 ```
 
 下面是动画效果的函数代码
+
 ```javascript
 function animateOut() {
   bannerWrapper.style.msTransform = `translateY(-${bannerHeight}px)`;
@@ -192,11 +199,10 @@ function animateIn() {
 
 ## 演示
 
-<span id="show">这里是导航菜单的演示效果</span>
-<p data-height="265" data-theme-id="0" data-slug-hash="ZKJVdw" data-default-tab="css,result" data-user="SitePoint" data-embed-version="2" data-pen-title="Create an Animated Sticky Navigation Menu with Vanilla JavaScript" class="codepen">See the Pen <a href="http://codepen.io/SitePoint/pen/ZKJVdw/">Create an Animated Sticky Navigation Menu with Vanilla JavaScript</a> by SitePoint (<a href="http://codepen.io/SitePoint">@SitePoint</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+这里是导航菜单的演示效果:
+
+[Create an Animated Sticky Navigation Menu with Vanilla JavaScript](http://codepen.io/SitePoint/pen/ZKJVdw/)
 
 ## 总结
 
 这篇文章描述了如何仅仅用几行JavaScript代码(不需要jQuery)设计一个带动画的导航菜单。菜单会在页面向下滚动时上滑隐藏，页面向上滚动时下滑回视图并带有透明效果。这是通过监听垂直方向的滚动并在需要的时候把 CSS transformatinos 应用到DOM元素上来完成的。这样的定制化解决方案会给你更大的自由空间，让你可以根据自己的需求和规定灵活的进行设计。
-
-这篇文章由[Vildan Softic](https://www.sitepoint.com/author/vildansoftic)审阅。感谢所有致力于让SitePoint内容完美的审稿人!
