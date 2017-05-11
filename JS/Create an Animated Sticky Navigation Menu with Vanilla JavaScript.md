@@ -130,7 +130,7 @@ const banner = document.querySelector('.banner');
 
 接下来我们需要确定滚动的方向以便我们能相应的展示和隐藏菜单。
 
-我们以 `newOffset` 变量开始。在页面加载的时它会被设置为 [window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY) 的值 —— 当前页面垂直滚动的像素个数(初始为 `0`)。当用户滚动时，`newOffset 会相应的增加或减少。如果 `newOffset` 大于 `bannerHeight`，这时我们就知道菜单已经滚动到视图外了。
+我们以 `newOffset` 变量开始。在页面加载时它会被设置为 [window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY) 的值 —— 当前页面垂直滚动的像素个数(初始为 `0`)。当用户滚动时，`newOffset 会相应的增加或减少。如果 `newOffset` 大于 `bannerHeight`，这时我们就知道菜单已经滚动到视图外了。
 
 ```javascript
 const newOffset = window.scrollY;
