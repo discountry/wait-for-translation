@@ -217,7 +217,7 @@ module 脚本与添加 `defer` 属性的脚本使用相同的执行队列。
 
 [演示页面](https://module-script-tests-zoelmqooyv.now.sh/cookie-page)
 
-如果是相同的来源的请求，大多数基于CORS的API都会发送凭据（cookie等），但 `fetch（）` 和模 module 脚本是例外 —— 默认是不携带凭据的。
+如果是相同的来源的请求，大多数基于CORS的API都会发送凭据（cookie等），但 `fetch（）` 和 module 脚本是例外 —— 默认是不携带凭据的。
 
 你可以通过添加 `crossorigin` 属性，来使同源 module 携带凭据（对此我感到有点奇怪，[在规范讨论中我已经提出质疑](https://github.com/whatwg/html/issues/2557)）。如果是非同源的情况，你可以设置 `crossorigin="use-credentials"` 属性。注意，请求的来源必须有包涵 `Access-Control-Allow-Credentials: true`头部信息的响应。
 
