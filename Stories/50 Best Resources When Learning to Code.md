@@ -10,13 +10,13 @@
 
 ## 写在前面的话
 
-编程已成为一项很实用的技能。不管你现在或未来会从事何种工作，学习编程、了解科技技术都是件很有价值的事。
+学习编程已经逐渐成为一种实用性的技能。不管你现在做什么工作，了解编程和技术都是件很有价值的事。
 
 现在几乎所有行业的革新都以科技创新为基础。
 
-如今人才市场越来越青睐那些在多领域能力见长的人。想象下未来5年，可能没有一个雇佣者会愿意招一个能力单一的人，他们更希望要一个能在多领域中游刃有余的人才。
+如今人才市场越来越青睐那些在多领域能力见长的人。想象下未来5年，可能没有哪个用人单位会愿意招聘单一型人才，他们更希望招到复合型人才。
 
-求知欲驱使着我们学习新事物，为我们打开新机遇。而一直保持求知好奇的状态，你会学得更充实更快乐。去完成相同一件事，比起只擅长一项技能的人，如果你能从事多种工作，习得更多技能的话，你会做得比他们更好。因为没有什么事是完全只需一种能力就能很好解决的。求知探索的精神会促使你去尝试、验证、总结，然后再循环这个过程。
+求知欲是学习和机遇的开始。如果你一直保持一颗好奇心，你会学得更充实更快乐。去完成相同一件事，比起只擅长一项技能的人，如果你能从事多种工作，习得更多技能的话，你会做得比他们更好。因为没有什么事是完全只需一种能力就能很好解决的。求知探索的精神会促使你去尝试、验证、总结，然后再循环这个过程。
 带着自己的求知欲勇敢前进吧！
 
 以上是我想传达給大家的一些想法，那接下来就让我们一起来看下学习编程时能帮助到你的50个超实用资源吧！
@@ -31,7 +31,7 @@
 
 ### 2. [Ruby Monk](https://rubymonk.com/)
 
-一个学习Ruby语言的网站，完全免费，如果愿意你也可以给予他们一些资助。这个网站的课程学习提供了动手操作的环节，每节课都有一段指导内容，在它下面会有一块代码示例区来供你修改和执行。RubyMonk网站有一个入门课程，两个中级课程和一个进阶课程。
+一个学习Ruby语言的网站，完全免费，如果愿意你也可以给予他们一些打赏。这个网站的课程学习提供了动手操作的环节，每节课都有一段指导内容，在它下面会有一块代码示例区来供你修改和执行。RubyMonk网站有一个入门课程，两个中级课程和一个进阶课程。
 
 课程关键词：Ruby
 
@@ -102,7 +102,7 @@ Udemy是个在线学习平台。它的目标用户是那些已有基础的人群
 
 ## 在线社区
 
-### 16. [Github](http://github.com/)
+### 16. [Github](https://github.com/)
 
 全球最大的开源社区。你可以为开源项目贡献代码，跟踪项目进度，实现新的想法。
 
@@ -134,3 +134,82 @@ For example, /r/web_design is the place for exploration and discovery of all thi
 Hacker News是一个专注于传播计算机行业新闻与企业动态的社交新闻站点。它由Paul Graham的投资基金和创业孵化器Y Combinator运营。一般，新闻能登上这个站点，说明内容足够引起大家的好奇。
 
 ### 23. [Designer News](https://www.designernews.co/)
+
+一个专为设计师及相关领域的从业者打造的社区，网站建于2012年12月31日，在这里大家能讨论、分享业内各种喜闻乐见的事。
+
+### 24. [Producthunt](https://www.producthunt.com/)
+
+Product Hunt每天都会分享最新的应用产品。技术产品爱好者在这里可以尽情分享、深度讨论最新的手机应用、网站、硬件产品和其他技术创新产品。
+
+### 25. [Dribbble](https://dribbble.com/)
+
+Dribbble is a community of designers showing off their latest work. Web designers, graphic designers, illustrators, icon artists, typographers, logo designers, and other creative types share small screenshots (shots) that show their work, process, and current projects.
+
+### 26. [Behance](https://www.behance.net/)
+
+The leading online platform to showcase & discover creative work. The creative world updates their work in one place to broadcast it widely and efficiently. Companies explore the work and access talent on a global scale.
+
+### 27. [Quora](https://www.quora.com/)
+
+摄取、分享知识的好地方。你可以在这里发布问题，可以与见解独到、回答质量高的答题者交流沟通。
+
+## 书籍
+
+阅读也是学习编程的良好途径。你可以读读关于敏捷开发、精益创业和精益开发（lean development）的书籍。
+
+### 28. [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+
+<big>Books for personal development & business that will help you when learning to code</big>
+
+……
+
+## Youtube频道
+
+大量的在线学习资源，视频教程，妈妈再也不用担心你的编程学习啦。（译者按：你可能需要先科学上网）
+
+### 40. [Treehouse](https://www.youtube.com/user/gotreehouse)
+
+超过1000个教学视频，都是由网站设计、开发及商业等领域的专业老师制作的。你可以学习到网站、应用的开发以及创业知识。
+
+### 41. [Learncode.Academy](https://www.youtube.com/user/learncodeacademy)
+
+提供网站开发及设计相关的教程，涉及：HTML, CSS, JavaScript, CSS布局, 响应式设计, React.js, Node.js, Angular.js, Docker(Moby), 运维开发, 服务器管理和部署策略。
+
+### 42. [Google Developers](https://www.youtube.com/user/GoogleDevelopers)
+
+Google Developers频道有教学课程、讲座、近期新闻以及技术的最佳实践。涉及到的技术不止包含安卓、Chrome、网站开发、Polymer、性能优化和iOS！
+
+### 43. [Android Developers](https://www.youtube.com/user/androiddevelopers)
+
+这个是Android Developers直播视频的主页。除了过往的在线活动视频，这里还有示例、教程等所有和安卓相关的一切视频。
+
+### 44. [The Coding Train](https://www.youtube.com/user/shiffman)
+
+The Coding Train每周都会发布“创意编程”的教学视频。主题涵盖编程语言的基础，例如Javascript（使用p5.js）和Java（使用Processing语言），还有例如物理仿真、计算机视觉、数据可视化等的生成算法，
+
+## Ted讲座
+
+下面列出了部分关于编程的TED讲座：
+
+### 45. [编程语言：下一个全球性语言](https://www.ted.com/playlists/369/code_the_next_universal_langu)
+
+### 46. [因特网的起源](https://www.ted.com/playlists/365/internet_origin_stories)
+
+### 47. [编程合集](https://www.ted.com/topics/programming)
+
+## 开源项目
+
+如果你还是不知道如何开始编程，那从开源项目学起会是个好选择。搜寻阅读开源项目使你有机会和大量开发者交流沟通，并能学会用正确的姿势书写代码。
+
+有趣的事实：为英国政府和铁路部门开发的项目都开源在了Github上。<br/>
+以下是部分和开源项目相关的推荐：
+
+### 48. [Code Triage](https://www.codetriage.com/)
+
+### 49. [Ava](https://github.com/avajs/ava)
+
+### 50. [Contributor Covenant](http://contributor-covenant.org/)
+
+<big>编程先打破完美（perfect），再使不可能成为可能。祝你好运！</big></br>
+
+感谢您的阅读！如果喜欢这篇文章，请点个赞并分享給更多人。
