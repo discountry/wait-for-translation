@@ -1,4 +1,4 @@
-# JavaScript函数的各个方面
+# JavaScript函数定义的多种方法
 
 >原文链接：[The Many Faces of Functions in JavaScript](https://bocoup.com/blog/the-many-faces-of-functions-in-javascript)
 >
