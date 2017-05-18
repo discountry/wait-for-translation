@@ -113,7 +113,7 @@ let C = class {
 
 #### 箭头函数
 
-作为ES2015最具争议性的函数之一，箭头函数已经变得众所周知且无处不在。箭头函数语法是这样定义的：它为函数声明提供了两种不同的格式：赋值表达式（箭头后面没有跟“{”方括号时为赋值表达式）和函数体（函数体中包括0到多个语句时为函数体）。这个语法还允许描述单个参数时不加圆括号，然而0个或一个以上参数需要加圆括号。这些语法结构允许箭头函数拥有多种书写形式：
+作为ES2015最具争议性的函数之一，箭头函数已经变得众所周知且无处不在。箭头函数语法是这样定义的，它为函数声明提供了两种不同的格式：赋值表达式（箭头后面没有跟“{”方括号时为赋值表达式）和函数体（代码中包括0到多个语句时为函数体）。这个语法还允许在描述单个参数时不加圆括号，然而0个或一个以上参数需要加圆括号。这些语法结构允许箭头函数拥有多种书写形式：
 ```
 // 木有参数的赋值表达式
 (() => 2 ** 2);
@@ -127,11 +127,11 @@ let C = class {
 // 一个以上括起来的参数和赋值表达式
 ((x, y) => x ** y);
 ```
-在上面所示的最后一种形式中，参数被描述为一个*覆盖的参数列表*，因为它们被包装在括号内。这提供了一种语法来标记参数列表或特殊的解构模式，就像({ x })= > x。
+在上面所示的最后一种形式中，参数被描述为一个*括起来的参数列表*，因为它们被包装在括号内。这提供了一种语法来标记参数列表或特殊的解构模式，就像({ x })= > x。
 
-未被覆盖的形式——也就是没有圆括号的形式——在箭头函数只有以一个标识符名称作为参数的形式。当箭头函数在异步函数或生成器中定义时，这个标识符名称需要以`await`或`yeild`作为前缀定义。但这是我们在箭头函数中能得到的最深层的没有覆盖参数列表的情况。
+未被括起来的形式——也就是没有圆括号的形式——在箭头函数表现为只用一个标识符名称作为参数的形式。当箭头函数在异步函数或生成器中定义时，这个标识符名称需要以`await`或`yeild`作为前缀定义。但这是我们在箭头函数中能得到的最大程度的不用括号括起来参数列表的情况。
 
-箭头函数可以(也经常)出现在初始化值或属性定义的赋值中，但是上面所示的箭头函数表达式已经包括了这种情况，如下面的例子所示:
+箭头函数可以(也经常)出现在初始化值或属性定义的赋值中，上面所示的箭头函数表达式已经包括了这种情况，如下面的例子所示:
 ```
 let foo = x => x ** 2;
 
@@ -141,7 +141,7 @@ let object = {
 ```
 
 #### 生成器
-生成器有一种特殊的语法，它被添加在所有语法形式中，除了箭头函数和setter / getter方法的定义。我们可以用其生成函数声明、表达式、定义，甚至构造函数。让我们试着把它们列在这里:
+生成器有一种特殊的语法，它可以被添加在所有语法形式中，除了箭头函数和定义setter / getter方法的时候不能添加。我们可以用其生成函数声明、表达式、定义，甚至构造函数。让我们把它们列出来:
 ```
 // 生成器声明
 function *BindingIdentifer() {}
@@ -189,128 +189,130 @@ let C = class {
 
 ### ES2017
 #### 异步函数
-在几年的发展之后，将于2017年6月发布ES2017——EcmaScript语言规范的第8版——的异步功能。尽管如此，许多开发人员已经使用了这个特性，这要归功于Babel的早期实现支持!
+经历了几年的发展，异步函数将于2017年6月发布ES2017的——EcmaScript语言规范的第8版引入。尽管如此，许多开发人员已经使用了这个特性，这要归功于[Babel](https://babeljs.io/)的早期实现支持！
 
-Async函数语法为描述异步操作提供了一种干净而统一的方式。调用时，Async函数对象将返回一个承诺对象，当异步函数返回时将解析该对象。当一个等待表达式被包含在里面时，异步函数也可能暂停函数的执行，然后将其用作异步函数的返回值。
+Async函数语法为描述异步操作提供了一种干净而统一的方式。调用时，Async函数对象将返回一个Promise对象，这个对象将在异步函数返回时被解析。当包含一个`await`表达式时，异步函数可能暂停函数的执行，然后将其用作异步函数的返回值。
 
-它的语法和我们从其他表单中所知道的一样:
+它的语法和我们从其他形式中所知道的一样:
 ```
-// Async Function Declaration
+// 异步函数声明
 async function BindingIdentifier() { /**/ }
 
-// Another not-so-anonymous Async Function declaration
+// not-so-anonymous 异步函数声明
 export default async function() { /**/ }
 
-// Named Async Function Expression
+// 命名异步函数表达式
 // (BindingIdentifier is not accessible outside of this function)
 (async function BindingIdentifier() {});
 
-// Anonymous Async Function Expression
+// 匿名异步函数表达式
 (async function() {});
 
-// Async Methods
+// 异步方法
 let object = {
   async methodName() {},
   async ["computedName"]() {},
 };
 
-// Async Method in a Class Statement
+// 类声明中的异步方法
 class C {
   async methodName() {}
   async ["computedName"]() {}
 }
 
-// Static Async Method in a Class Statement
+// 类声明中的静态异步方法
 class C {
   static async methodName() {}
   static async ["computedName"]() {}
 }
 
-// Async Method in a Class Expression
+// 类声明中的异步方法
 let C = class {
   async methodName() {}
   async ["computedName"]() {}
 };
 
-// Static Async Method in a Class Expression
+// 类表达式中的异步方法
 let C = class {
   static async methodName() {}
   static async ["computedName"]() {}
 };
 ```
-#### 异步箭头功能
-异步和等待并不局限于普通的声明和表达式形式，它们也可以用于箭头函数:
+#### 异步箭头函数
+`async`和`await`并不局限于普通的声明和表达式形式，它们也可以用于箭头函数:
 ```
-// Single identified parameter followed by an assignment expression
+// 单个参数的赋值表达式
 (async x => x ** 2);
 
-// Single identified parameter followed by a function body
+// 单个参数的函数体
 (async x => { return x ** 2; });
 
-// A covered parameters list followed by an assignment expression
+// 括起来的参数列表后跟赋值表达式
 (async (x, y) => x ** y);
 
-// A covered parameters list followed by a function body
+// 括起来的参数列表后跟函数体
 (async (x, y) => { return x ** y; });
 ```
-###
-####
-在2017年，异步和等待关键字将被扩展以支持新的异步生成器形式。这个特性的进展可以通过建议的github库进行跟踪。您可能已经猜到，这是异步、等待和现有的生成器声明和生成表达式表单的组合。调用时，异步生成器返回一个迭代器，它的next()方法返回承诺用迭代器结果对象解决，而不是直接返回迭代器结果对象。
+### ES2017
+#### 异步生成器 `Async Generators`
+在2017年，`async`和`await`关键字将被扩展以支持新的异步生成器形式。这个特性的进展可以通过[proposal’s github repository](https://github.com/tc39/proposal-async-iteration)进行跟踪。您可能已经猜到，这是`await`、`async`和现有的生成器声明和表达式语法的组合。调用时，异步生成器返回一个迭代器，它的`next()`方法返回Promise对象， 且用迭代器结果对象解决，而不是直接返回迭代器结果对象。
 
 可以在许多地方发现异步生成器，您可能已经找到了生成器函数。
 ```
-/ Async Generator Declaration
+// 异步生成器声明
 async function *BindingIdentifier() { /**/ }
 
-// The not-so-anonymous Async Generator Declaration
+// not-so-anonymous 异步生成器声明
 export default async function *() {}
 
-// Async Generator Expression
-// (BindingIdentifier is not accessible outside of this function)
+// 异步生成器表达式
+// (BindingIdentifier在函数外部不可访问)
 (async function *BindingIdentifier() {});
 
-// Anonymous Function Expression
+// 匿名函数表达式
 (async function *() {});
 
-// Method Definitions
+// 方法定义
 let object = {
   async *propertyName() {},
   async *["computedName"]() {},
 };
 
 
-// Prototype Method Definitions in Class Declarations
+// 类声明中的原型方法定义
 class C {
   async *propertyName() {}
   async *["computedName"]() {}
 }
 
-// Prototype Method Definitions in Class Expressions
+// 类表达式中的原型方法定义
 let C = class {
   async *propertyName() {}
   async *["computedName"]() {}
 };
 
-// Static Method Definitions in Class Declarations
+// 类声明中的静态方法定义
 class C {
   static async *propertyName() {}
   static async *["computedName"]() {}
 }
 
-// Static Method Definitions in Class Expressions
+// 类表达式中的静态方法定义
 let C = class {
   static async *propertyName() {}
   static async *["computedName"]() {}
 };
 ```
-###
-每个函数表单不仅对学习和消费都是一个挑战，而且对JS runtimes和Test262的实现和维护也是一个挑战。当引入新的语法形式时，Test262必须与所有相关的语法规则一起测试该表单。例如，将默认参数语法的测试限制为简单的函数声明形式是不明智的，并假设它将以所有其他形式工作。每一个语法规则都必须经过测试，编写这些测试是一个不合理的任务，分配给一个人。这将导致测试生成工具的设计和实现。测试生成提供了一种确保覆盖率是详尽的方法。
 
-这个项目现在包含了一系列由不同的测试用例和模板组成的源文件，例如，如何检查每个函数表单上的参数，或者函数表单测试，甚至更多超出函数表单的函数形式，在这些函数形式中，破坏绑定和破坏性赋值都是适用的。
+### 复杂的挑战
+每个函数语法格式不仅对学习和使用是挑战，而且对JS runtimes和Test262的实现和维护也是一个挑战。当引入新的语法形式时，Test262必须与所有相关的语法规则一起测试该格式。例如，将默认参数语法的测试限制为简单的函数声明形式，并假设在其他格式下也正常起作用是不明智的。每一个语法规则都必须经过测试，将这些测试任务分配给一个人是不合理的。所以导致了测试生成工具的设计和实现。测试生成工具提供了一种确保能够覆盖（函数格式的多少）更详尽的方法。
 
-尽管它可能导致密集的和长时间的拉请求，但是覆盖率总是会提高，而且可能总是会发现新的错误。
+这个项目现在包含了一系列由不同的测试用例和模板组成的[源文件](https://github.com/tc39/test262/tree/master/src)，例如，[如何检查每个函数格式的参数](https://github.com/tc39/test262/tree/master/src/arguments)，或者[函数格式测试](https://github.com/tc39/test262/tree/master/src/function-forms)，甚至更多超出范围的函数形式，在这些函数形式中，[解构绑定](https://github.com/tc39/test262/tree/master/src/dstr-binding)和[解构赋值](https://github.com/tc39/test262/tree/master/src/dstr-assignment)都是适用的。
 
-为什么知道所有的函数形式很重要?
+尽管它可能导致密集的和长时间的发送请求，但是覆盖率总是会提高，而且可能[总是会发现新的错误](https://github.com/tc39/test262/pull/651)。
 
-如果不需要在Test262上编写测试，计算和列出所有函数表单可能并不重要。这里已经列出了许多表单的模板。新的测试可以很容易地使用现有的模板作为起点。
-确保EcmaScript规范的良好测试是Test262的主要优先级。这对所有的JavaScript运行时间都有直接的影响，我们识别的表单越多，覆盖率就越全面，这将帮助新功能更无缝地集成，不管您使用的平台是什么。
+### 为什么了解所有的函数格式是很重要的?
+
+如果不需要在Test262上编写测试，计算和列出所有函数表单可能并不重要。这里已经列出了[许多格式的模板](https://github.com/tc39/test262/tree/master/src/function-forms/default)。新的测试可以很容易地使用现有的模板作为起点。
+
+确保EcmaScript规范的良好测试是Test262的主要任务。这对所有的JavaScript运行时间都有直接的影响，我们识别的格式越多，覆盖率就越全面，这将帮助新功能更无缝地集成，不管您使用的平台是什么。
