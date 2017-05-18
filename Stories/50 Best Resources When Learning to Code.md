@@ -96,7 +96,7 @@ Udemy是个在线学习平台。它的目标用户是那些已有基础的人群
 
 谷歌下TechHub或者"coworking hub"，看看你所在的城市里这些地方在哪儿。在那里你可以参与自己感兴趣的活动，认识新的朋友，以及编程的学习。
 
-## 15. 实习
+### 15. 实习
 
 这个行业的实习机会特别多。你可以通过招聘网站找到大量的招聘信息，在脸书和领英上的一些特定组织里，也能找到各种各样的实习机会。
 
@@ -112,26 +112,27 @@ Gitter is a chat and networking platform that helps you manage, grow and connect
 
 ### 18. [Stack Overflow](https://stackoverflow.com/)
 
-Stack Overflow，最大的在线社区。程序员在这里能学习、分享知识，推进职业发展。
+Stack Overflow，最大的在线社区。程序员在这里能学习、分享知识，推进自身职业发展。
 
 ### 19. [Stack Exchange](https://stackexchange.com/)
 
-Stack Exchange is a network of question-and-answer websites on topics in varied fields, each site covering a specific topic. Questions, answers, and users are subject to a reputation award process.
+Stack Exchange是一个问答网站，主题涵盖多个领域，分类十分清晰。网站有个荣誉奖励系统，每一个问题、每一个回答都能被评分，每一位用户都拥有声望值。
 
 ### 20. [Twitter](https://twitter.com/)
 
-Twitter是一个发现大牛并与其交流的好地方。这里有许许多多才能出众、见解独到的开发者。如果你不知道关注谁，那你可以看看影响力排行（[比如这个](http://blog.teamtreehouse.com/40-web-developers-to-follow-on-twitter)），或者带上 #developer 标签来搜索用户。
+Twitter是一个发现大牛并与其交流的好地方。这里有许许多多才能出众、见解独到的开发者。如果你不知道关注谁，那你可以看看影响力排行（[比如这个](http://blog.teamtreehouse.com/40-web-developers-to-follow-on-twitter)），或者带上 #developer 标签来检索用户。
 
-My recommendation here would be to follow leaders in your niche and stay up-to-date about the latest technologies and practices.
+我建议你可以关注下业界里的领头人物，还有最新的技术和应用实践。
 
 ### 21. [Reddit](https://www.reddit.com/)
 
+Reddit也是个发现话题、沟通交流的社区。比如，
 Reddit is also a great community to find topics and interacting with people.
 For example, /r/web_design is the place for exploration and discovery of all things web design, development and the life cycle of the web designer. They welcome beginners and veterans alike to contribute with useful and informative posts, ask questions or engage in discussion.
 
 ### 22. [Hacker News](https://news.ycombinator.com/)
 
-Hacker News是一个专注于传播计算机行业新闻与企业动态的社交新闻站点。它由Paul Graham的投资基金和创业孵化器Y Combinator运营。一般，新闻能登上这个站点，说明内容足够引起大家的好奇。
+Hacker News是一个专注于传播计算机行业新闻与企业动态的社交新闻站点。它由Paul Graham的投资基金和创业孵化器Y Combinator运营。一般，新闻能登上这个站点，说明其内容足够引起大家的好奇心。
 
 ### 23. [Designer News](https://www.designernews.co/)
 
@@ -143,11 +144,11 @@ Product Hunt每天都会分享最新的应用产品。技术产品爱好者在�
 
 ### 25. [Dribbble](https://dribbble.com/)
 
-Dribbble is a community of designers showing off their latest work. Web designers, graphic designers, illustrators, icon artists, typographers, logo designers, and other creative types share small screenshots (shots) that show their work, process, and current projects.
+设计师们能在Dribbble社区中展示自己的最新作品。网站设计师、美术设计师、插画师、图标艺术家、印刷品设计师、徽标设计师等各种形式的创作者都能将自己的作品、设计流程、项目（current projects）以图片或动画等的形式分享出来。
 
 ### 26. [Behance](https://www.behance.net/)
 
-The leading online platform to showcase & discover creative work. The creative world updates their work in one place to broadcast it widely and efficiently. Companies explore the work and access talent on a global scale.
+一个展示发现创意作品、业内领先的在线平台。聚集在这里的作品能得到更广泛的关注和赏识。企业在这里能面向全球发布职位、发现人才。
 
 ### 27. [Quora](https://www.quora.com/)
 
@@ -159,9 +160,32 @@ The leading online platform to showcase & discover creative work. The creative w
 
 ### 28. [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 
-<big>Books for personal development & business that will help you when learning to code</big>
+### 29. [Soft Skills: The software developer’s life manual](https://www.amazon.com/gp/product/1617292397)
 
-……
+### 30. [The Art of Computer Programming](https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043)
+
+### 31. [《编程珠玑》（第2版）](https://book.douban.com/subject/3227098/) [*原版*](https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880)
+
+### 32. [《代码大全》](https://book.douban.com/subject/1477390/) [*原版*](https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670)
+
+### 33. [《编程人生》](https://book.douban.com/subject/5355285/) [*原版*](https://www.amazon.com/Coders-Work-Reflections-Craft-Programming/dp/1430219483)
+
+<big>学习编程，除了要阅读专业书籍，那些针对个人内在发展和企业相关的书籍对你也会很有裨益。</big><br/>
+如果你计划参与一个很酷的项目，你得先对项目有个整体认知。
+
+与身边的人保持[良好的人际关系](https://www.ted.com/talks/robert_waldinger_what_makes_a_good_life_lessons_from_the_longest_study_on_happiness/transcript?language=zh-cn)能让你的生活更美好。以下推荐的一些书有关商业和人际交往：
+
+### 34. [《驱动力》](https://book.douban.com/subject/10484712/) [*原版*](https://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1594484805)
+
+### 35. [《精益创业》](https://book.douban.com/subject/10945606/) [*原版*](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898)
+
+（译者按：作者把第36条吃掉了！）
+
+### 37. [《从0到1》](https://book.douban.com/subject/26297606/) [*原版*](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296)
+
+### 38. [《部落：一呼百应的力量》](https://book.douban.com/subject/3795574/) [*原版*](https://www.amazon.com/Tribes-We-Need-You-Lead/dp/1491514736)
+
+### 39. [《蓝海战略》](https://book.douban.com/subject/5311622/) [*原版*](https://www.amazon.com/Blue-Ocean-Strategy-Uncontested-Competition/dp/1591396190)
 
 ## Youtube频道
 
