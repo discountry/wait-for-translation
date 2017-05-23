@@ -16,7 +16,7 @@
 
 如今人才市场越来越青睐那些在多领域能力见长的人。想象下未来5年，可能没有哪个用人单位会愿意招聘单一型人才，他们更希望招到复合型人才。
 
-求知欲是学习和机遇的开始。如果你一直保持一颗好奇心，你会学得更充实更快乐。去完成相同一件事，比起只擅长一项技能的人，如果你能从事多种工作，习得更多技能的话，你会做得比他们更好。因为没有什么事是完全只需一种能力就能很好解决的。求知探索的精神会促使你去尝试、验证、总结，然后再循环这个过程。
+求知欲是学习和机遇的开始。如果你一直保持一颗好奇心，你会学得更充实更快乐。去完成相同一件事，比起只擅长一项技能的人，如果你能从事多种工作，习得更多技能的话，你会做得比他们更好。因为没有什么事是完全只需一种能力就能很好解决的。求知探索的精神会促使你去尝试、验证、总结，然后再循环这个过程。<br/>
 带着自己的求知欲勇敢前进吧！
 
 以上是我想传达給大家的一些想法，那接下来就让我们一起来看下学习编程时能帮助到你的50个超实用资源吧！
@@ -63,9 +63,9 @@ CodeBar致力于帮助少数群体（underrepresented groups）学习编程。�
 
 ### 8. [Railsgirls](http://railsgirls.com/)
 
-他们致力于为女性服务，打造的社区通过提供开发教程、 making technology more approachable来帮助女性更好的理解技术细节以及如何实现她们的想法。
+他们致力于为女性服务，打造的社区通过提供开发教程、 易用的技术，来帮助女性更好的理解技术细节以及如何实现她们的想法。
 
-Learn sketching, prototyping, basic programming and get introduced to the world of technology!
+学习草图设计、原型设计、基础编程，让我们一起走进技术的世界吧！
 
 ### 9. [Udemy](https://www.udemy.com/)
 
@@ -82,7 +82,7 @@ Udemy是个在线学习平台。它的目标用户是那些已有基础的人群
 
 ### 11. 拜师
 
-这是个很有趣的学习方式。去接触业界里的大牛并向他们请教。你的知识体系得到完善，同时还有机会认识到其他大牛。
+这是个很有趣的学习方式。去接触业界里的大牛并向他们请教。你的知识体系能得到完善，同时还有机会认识到其他大牛。
 
 ### 12. 聚会活动
 
@@ -94,7 +94,7 @@ Udemy是个在线学习平台。它的目标用户是那些已有基础的人群
 
 ### 14. 合作空间(Hubs & Coworking spaces)
 
-谷歌下TechHub或者"coworking hub"，看看你所在的城市里这些地方在哪儿。在那里你可以参与自己感兴趣的活动，认识新的朋友，以及编程的学习。
+谷歌搜索TechHub或者"coworking hub"，看看你所在的城市里这些地方在哪儿。在那里你可以参与自己感兴趣的活动，认识新的朋友，以及编程的学习。
 
 ### 15. 实习
 
@@ -108,7 +108,7 @@ Udemy是个在线学习平台。它的目标用户是那些已有基础的人群
 
 ### 17. [Gitter](https://gitter.im/)
 
-Gitter is a chat and networking platform that helps you manage, grow and connect communities through messaging, content and discovery.
+Gitter是个聊天网络平台，它能帮助技术社区管理者管理、壮大自己的社区，普通用户能通过即时消息、了解技术内容、发现探索来与社区互动交流。
 
 ### 18. [Stack Overflow](https://stackoverflow.com/)
 
@@ -126,13 +126,11 @@ Twitter是一个发现大牛并与其交流的好地方。这里有许许多多�
 
 ### 21. [Reddit](https://www.reddit.com/)
 
-Reddit也是个发现话题、沟通交流的社区。比如，
-Reddit is also a great community to find topics and interacting with people.
-For example, /r/web_design is the place for exploration and discovery of all things web design, development and the life cycle of the web designer. They welcome beginners and veterans alike to contribute with useful and informative posts, ask questions or engage in discussion.
+Reddit也是个发现话题、沟通交流的社区。比如，在/r/web_design板块中，你能探索发现所有有关网站设计和开发的内容，还有网站设计师的成长路径。不管是新手还是老手，社区都会很欢迎你能发布实用、增长见闻的帖子；提出疑问；参与话题讨论。
 
 ### 22. [Hacker News](https://news.ycombinator.com/)
 
-Hacker News是一个专注于传播计算机行业新闻与企业动态的社交新闻站点。它由Paul Graham的投资基金和创业孵化器Y Combinator运营。一般，新闻能登上这个站点，说明其内容足够引起大家的好奇心。
+Hacker News是一个专注于传播计算机行业新闻与企业动态的社交新闻站点。它由Paul Graham的投资基金和创业孵化器Y Combinator运营。一般，新闻能登上这个站点，说明其内容足够引起大家的好奇。
 
 ### 23. [Designer News](https://www.designernews.co/)
 
@@ -234,6 +232,6 @@ The Coding Train每周都会发布“创意编程”的教学视频。主题涵�
 
 ### 50. [Contributor Covenant](http://contributor-covenant.org/)
 
-<big>编程先打破完美（perfect），再使不可能成为可能。祝你好运！</big></br>
+<big>**编程，先破而后立。祝你好运！**</big></br>
 
-感谢您的阅读！如果喜欢这篇文章，请点个赞并分享給更多人。
+感谢您的阅读！如果喜欢这篇文章，请点个赞并分享给更多人。
