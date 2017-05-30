@@ -1,4 +1,4 @@
-﻿> 原文：[JavaScript-A First-Class Language At Last](https://hackernoon.com/javascript-a-first-class-language-at-last-209376f69731)
+> 原文：[JavaScript-A First-Class Language At Last](https://hackernoon.com/javascript-a-first-class-language-at-last-209376f69731)
 >
 > 作者：[Tom Goldenberg](https://hackernoon.com/@tomgoldenberg)
 >
