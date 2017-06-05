@@ -1,13 +1,14 @@
-[原文链接](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d
-)
-
-**作者：Samer Buna**
-
-**译者：李序锴**
-
 # Understanding Node.js Event-Driven Architecture
 
-# 理解Node.js事件驱动架构
+> [原文链接](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d)
+>
+> 作者：Samer Buna
+>
+> 译者：李序锴
+>
+>转载请注明出处
+
+## 理解Node.js事件驱动架构
 
 Most of Node’s objects — like HTTP requests, responses, and streams — implement the `EventEmitter` module so they can provide a way to emit and listen to events.
 
