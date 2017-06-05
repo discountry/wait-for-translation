@@ -1,6 +1,6 @@
 # Understanding Node.js Event-Driven Architecture
 
-> [Understanding Node.js Event-Driven Architecture](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d)
+> 原文链接: [Understanding Node.js Event-Driven Architecture](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d)
 >
 > 作者：Samer Buna
 >
