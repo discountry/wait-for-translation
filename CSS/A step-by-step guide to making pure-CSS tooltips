@@ -1,0 +1,179 @@
+# <center>制作纯CSS工具提示的分步指南</center>  
+
+原文链接：
+[A step-by-step guide to making pure-CSS tooltips
+](
+https://medium.freecodecamp.com/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346)  
+作者：[Youssouf El Azizi](https://medium.freecodecamp.com/@yjose)
+  
+译者：[jksqx](https://www.zhihu.com/people/yi-yang-74-34/activities)  
+转载请注明出处  
+
+<img src="../first.gif">
+  
+<p>我最近在做创建一个简单的提示工具的教程，只使用了纯css（并且没有多余的HTML元素或者JavaScript）。之后我将这个技术运用到我自己的项目中，并且总结了一些方法改进它。 </p>
+  
+
+<p>这篇文章将一步步指导你帮助你理解这个css技巧，让你也能做这样一个纯css的提示工具。</p>
+  
+## 问题
+  
+<p>我需要给我的项目创建一个自定义的提示工具。</p>
+  
+<p>我先google了“css 提示工具生成器” 我发现有不少的生成器。他们的方法是给你的提示工具元素里面添加一个span，并且给span绝对定位（即position：absolute）。
+但是我已经有了一个完整的项目，我不想重头开始,将所有的这些span添加在我的项目中。因为这将会浪费时间并且使我的html代码变得复杂。应该得有更好的办法。</p>
+  
+最后，我在YouTube上发现了一个关于提示工具的很棒的教程。他们巧妙的使用了css选择器：：before和：：after去写提示工具。你可以看这里的[视频](https://www.youtube.com/watch?v=M4lQwiUvGlY&t=157s)  
+<p>这个技巧很巧妙并且简洁，但它不是通用的。</p>
+  
+## 改进的解决方案
+在这部分，我将会让这个方法更通用并且我们会发现更多关于css 的特性。这里是我们最后想要的：
+><button tooltip=”tooltip content here”> click here !! </button>
+  
+不仅如此，我们希望能轻松的指定提示工具的位置:
+  
+><button tooltip=”tooltip content here” tooltip-position=”left” > click here !! </button>
+  
+<p>首先，视频里面有提到，我们要给按钮添加after和berore伪元素</p>
+  
+<p>::after和::before是伪元素，它们能让你在元素的前后通过css插入内容到页面上。像是这样：</p>
+  
+>div :: after { 
+content：“after”; 
+}</br>
+div :: before { 
+content：“before”; 
+}
+    
+运行的结果是这样：
+>&lt;div&gt;</br>
+ before</br>
+ &lt;!-- div content here --&gt;</br>
+ after</br>
+&lt;/div&gt;
+  
+## 让我们逐步了解一下</br>
+### 第一步：我们添加一个这样的提示工具属性：</br>
+>&lt;button tooltip=”simple tooltip here”&gt; click Me !! &lt;/button&gt;</br>  
+
+<p>我们需要::after和::before伪元素。这是一个带有提示内容的简单矩形框提示工具。我们用css写出一个简单的矩形，然后用contants属性给矩形添加边框。</br><p>
+<p>伪元素::before用来显示提示的内容，我们将它添加到content属性中并且提取提示工具的属性值。content的值可以是字符串类型,像我们事例中的属性值，甚至是一张图片,像这样写url(path/images.png)。</br>  
+为了让这种方法有效，按钮元素的位置必须是相对的。话句话说，按钮内所有元素的位置对按钮来说都是相对的。</br>  <p>
+
+我们还会添加一些定位的技巧，用transfrom属性让提示工具居中。</br>  
+这里是CSS:</br>  
+>button{</br>
+  &emsp;&emsp;&emsp;&emsp;margin:auto;</br>
+  &emsp;&emsp;&emsp;&emsp;background: #3498db;</br>
+  &emsp;&emsp;&emsp;&emsp;font-family: Arial;</br>
+  &emsp;&emsp;&emsp;&emsp;color: #ffffff;</br>
+  &emsp;&emsp;&emsp;&emsp;font-size: 14px;</br>
+&emsp;&emsp;&emsp;}</br>
+[tooltip]{</br>
+  &emsp;&emsp;&emsp;&emsp;margin:20px;</br>
+  &emsp;&emsp;&emsp;&emsp;position:relative;</br>
+&emsp;&emsp;&emsp;}</br>
+[tooltip]::before {</br>
+&emsp;&emsp;&emsp;&emsp;content: "";</br>
+&emsp;&emsp;&emsp;&emsp;position: absolute;</br>
+&emsp; &emsp; &emsp;&ensp;top:-6px;</br>
+&emsp; &emsp; &emsp;&ensp;left:50%;</br>
+&emsp; &emsp; &emsp;&ensp;transform: translateX(-50%);</br>
+&emsp; &emsp; &emsp; &ensp;border-width: 4px 6px 0 6px;</br>
+&emsp; &emsp; &emsp; &ensp;border-style: solid;</br>
+&emsp; &emsp; &emsp; &ensp;border-color: rgba(0,0,0,0.7) transparent transparent transparent;</br>
+&emsp; &emsp; &emsp; &ensp;z-index: 100;</br>
+&emsp; &emsp; &emsp;}</br>
+[tooltip]::after {</br>
+&emsp; &emsp; &emsp; &ensp;content: attr(tooltip);</br>
+&emsp; &emsp; &emsp; &ensp;position: absolute;</br>
+&emsp; &emsp; &emsp; &ensp;left:50%;</br>
+&emsp; &emsp; &emsp; &ensp;top:-6px;</br>
+&emsp; &emsp; &emsp; &ensp;transform: translateX(-50%)&ensp;  translateY(-100%);</br>
+&emsp; &emsp; &emsp; &ensp;background: rgba(0,0,0,0.7);</br>
+&emsp; &emsp; &emsp; &ensp;text-align: center;</br>
+&emsp; &emsp; &emsp; &ensp;color: #fff;</br>
+&emsp; &emsp; &emsp; &ensp;padding:4px 2px;</br>
+&emsp; &emsp; &emsp; &ensp;font-size: 12px;</br>
+&emsp; &emsp; &emsp; &ensp;min-width: 80px;</br>
+&emsp; &emsp; &emsp; &ensp;border-radius: 5px;</br>
+&emsp; &emsp; &emsp; &ensp;pointer-events: none;</br>
+&emsp; &emsp; &emsp; &ensp;} </br>   
+[原始代码](https://gist.githubusercontent.com/yjose/b9366f4e6f914529455e34751c5d82a1/raw/99cf80cba75f4172903edea63d3bf55195f59af2/step1-tooltip.css)  
+  
+### 第二步:我们只是用伪元素:before和after来设置提示工具的位置，按钮的html代码如下：</br>
+> &lt;button tooltip=”tooltip here” tooltip-position=”left”&gt;</br>
+&emsp;&emsp;click here !!<br>
+ &lt;/button&gt;
+  
+提示框的位置可以在右边、左边、上边或者下边。
+  
+>[tooltip-position='left']::before{ </br>
+  &emsp;&emsp;&emsp;&emsp;left:0%;</br>
+  &emsp;&emsp;&emsp;&emsp;top:50%;</br>
+  &emsp;&emsp;&emsp;&emsp;margin-left:-12px;</br>
+ &emsp;&emsp;&emsp;&emsp; transform:translatey(-50%) rotate(-90deg) </br>
+&emsp;&emsp;&emsp;&emsp;}</br>
+[tooltip-position='top']::before{</br>
+ &emsp;&emsp;&emsp;&emsp; left:50%;</br>
+&emsp;&emsp;&emsp;&emsp;}</br>
+[tooltip-position='bottom']::before{</br>
+  &emsp;&emsp;&emsp;&emsp;top:100%;</br>
+  &emsp;&emsp;&emsp;&emsp;margin-top:8px;</br>
+  &emsp;&emsp;&emsp;&emsp;transform: translateX(-50%) translatey(-100%) rotate(-180deg)</br>
+&emsp;&emsp;&emsp;&emsp;}</br>
+[tooltip-position='right']::before{</br>
+  &emsp;&emsp;&emsp;&emsp;left:100%;</br>
+ &emsp;&emsp;&emsp;&emsp; top:50%;</br>
+  &emsp;&emsp;&emsp;&emsp;margin-left:1px;</br>
+  &emsp;&emsp;&emsp;&emsp;transform:translatey(-50%) rotate(90deg)</br>
+&emsp;&emsp;&emsp;&emsp;}</br>
+[tooltip-position='left']::after{</br>
+ &emsp;&emsp;&emsp;&emsp; left:0%;</br>
+ &emsp;&emsp;&emsp;&emsp; top:50%;</br>
+ &emsp;&emsp;&emsp;&emsp; margin-left:-8px;</br>
+ &emsp;&emsp;&emsp;&emsp; transform: translateX(-100%)   translateY(-50%);</br>
+&emsp;&emsp;&emsp;&emsp;}</br>
+[tooltip-position='top']::after{</br>
+ &emsp;&emsp;&emsp;&emsp; left:50%;</br>
+&emsp;&emsp;&emsp;&emsp;}</br>
+[tooltip-position='bottom']::after{</br>
+&emsp;&emsp;&emsp;&emsp;top:100%;</br>
+ &emsp;&emsp;&emsp;&emsp; margin-top:8px;</br>
+ &emsp;&emsp;&emsp;&emsp; transform: translateX&(-50%) translateY(0%);</br>
+}</br>
+[tooltip-position='right']::after{</br>
+  &emsp;&emsp;&emsp;&emsp; left:100%;</br>
+  &emsp;&emsp;&emsp;&emsp; top:50%;</br>
+  &emsp;&emsp;&emsp;&emsp; margin-left:8px;</br>
+  &emsp;&emsp;&emsp;&emsp; transform: translateX(0%)   translateY(-50%);</br>
+}</br>  
+### 步骤三：最后一步。我们给提示工具添加一个简单的hover属性.  
+ 点击下方的演示链接可以查看最终完整版的代码<br>
+[演示地址](https://codepen.io/yjose/pen/KWEqMg
+)  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
